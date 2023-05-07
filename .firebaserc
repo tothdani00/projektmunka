@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fake-instagram-314b9"
+  },
+  "targets": {
+    "fake-instagram-314b9": {
+      "hosting": {
+        "Fake-Instagram": [
+          "fake-instagram-314b9"
+        ]
+      }
+    }
+  }
+}

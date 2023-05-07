@@ -1,0 +1,5 @@
+<div id="postok">
+    <app-post-mutatas *ngFor="let post of posts" [postData]="post"></app-post-mutatas>
+</div>
+<button (click)="postKeszites()"
+mat-fab color="accent" id="post-button"><mat-icon>add</mat-icon></button>

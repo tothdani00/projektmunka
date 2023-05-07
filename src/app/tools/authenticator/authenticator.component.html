@@ -1,0 +1,29 @@
+<div id="auth">
+    <mat-card id="auth-content">
+        <mat-card-header >
+            <mat-card-title id="title">{{headerValtoztatas()}}</mat-card-title>
+        </mat-card-header>
+        <div *ngIf="isLogin()">
+            <input #loginEmail placeholder="Email"/>
+            <input #loginJelszo placeholder="Jelszó" type="password">
+            <button (click)="Bejelentkezeshez(loginEmail, loginJelszo)" 
+            mat-raised-button color="accent" (click)="onLogin()">Bejelentkezés</button>
+          </div>
+          <div *ngIf="isRegister()">
+            <input #registerEmail placeholder="Email">
+            <input #registerJelszo placeholder="Jelszó" type="password">
+            <input #registerJelszoUjra placeholder="Jelszó újra" type="password">
+            <button
+            (click)="Regisztralashoz(
+              registerEmail,
+              registerJelszo,
+              registerJelszoUjra
+            )" 
+            mat-flat-button color="accent">Készíts fiókot</button>
+          </div>
+          <mat-card-actions>
+            <button mat-stroked-button color="accent" *ngIf="isLogin()" (click)="onRegister()">Készíts fiókot</button>
+            <button mat-stroked-button color="accent" *ngIf="isRegister()" (click)="onLogin()">Bejelentkezés</button>
+          </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,7 @@
+<div id="profil" [ngClass]="{'aktiv': mutassa, 'nemAktiv': !mutassa}">
+    <div id="profil-content">
+        <input #nev placeholder="Név">
+        <textarea #leiras placeholder="Leírás"></textarea>
+        <button (click)="folytatas(nev, leiras)" mat-flat-button color="accent">Folytatás</button>
+    </div>
+</div>

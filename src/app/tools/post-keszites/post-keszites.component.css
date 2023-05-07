@@ -1,0 +1,49 @@
+#photo-upload{
+    display: none;
+  }
+  
+  textarea{
+    font-size: 1.5em;
+    padding: 1em;
+    resize: none;
+    width: 250px;
+    min-height: 200px;
+    border: none;
+    outline: none;
+  }
+
+  #post-preview{
+    text-align: right;
+    margin-top: 1em;
+
+  }
+  #post-preview-image{
+    object-fit: cover;
+    object-position: center;
+    width: 150px;
+    height: 100px;
+    border-radius: 1em;
+    border: 1px dashed grey;
+  }
+  
+  .post-card {
+    padding: 1em;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .post-actions label {
+    cursor: pointer;
+  }
+  
+  .post-actions input[type="file"] {
+    display: none;
+  }
+  
+  .post-actions mat-icon {
+    margin-right: 0.5em;
+  }
